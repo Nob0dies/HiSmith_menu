@@ -1,0 +1,58 @@
+$orange:#fab000;
+body{
+  background: #ffffff  ;
+
+  color:#fff;
+}
+.wrapper{
+  position: absolute;
+  top:0;
+  bottom: 7%;
+  left:0;
+  right: 0;
+  -webkit-box-shadow: -1px 27px 34px -16px rgba(182,186,192,1);
+  -moz-box-shadow: -1px 27px 34px -16px rgba(182,186,192,1);
+  box-shadow: -1px 27px 34px -16px rgba(182,186,192,1);
+
+
+
+}
+.paper{
+  background: #ffffff;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right:0;
+  width: 15%;
+  -webkit-box-shadow: 28px 3px 57px -5px rgba(176,180,187,1);
+  -moz-box-shadow: 28px 3px 57px -5px rgba(176,180,187,1);
+  box-shadow: 28px 3px 57px -5px rgba(176,180,187,1);
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6e7e9+0,e6e7e9+42,e4e5e7+52,e4e5e7+100 */
+  background: #e6e7e9; /* Old browsers */
+  background: -moz-linear-gradient(left, hsl(220,6%,91%) 0%, hsl(220,6%,91%) 42%, hsl(220,6%,90%) 52%, hsl(220,6%,90%) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, hsl(220,6%,91%) 0%,hsl(220,6%,91%) 42%,hsl(220,6%,90%) 52%,hsl(220,6%,90%) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, hsl(220,6%,91%) 0%,hsl(220,6%,91%) 42%,hsl(220,6%,90%) 52%,hsl(220,6%,90%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e7e9', endColorstr='#e4e5e7',GradientType=1 ); /* IE6-9 */
+  &.eco{
+    right:15%;
+  }
+  &.delivery{
+    right:30%;
+  }
+  &.quality{
+    right: 45%;
+  }
+  &.products{
+    right: 60%;
+  }
+  &.company{
+    right: 75%;
+  }
+  &.menu{
+    right: 90%;
+    width: 10%;
+    background: white;
+  }
+
+}

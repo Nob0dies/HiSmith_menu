@@ -1,58 +1,322 @@
-$orange:#fab000;
+$orange: #fab000; //цвет бренда
+$largeText: #8b8b8b; //цвет светлого текста
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
   background: #ffffff  ;
 
-  color:#fff;
 }
+
+//контейнер блоков
 .wrapper{
   position: absolute;
-  top:0;
+  top: 0;
   bottom: 7%;
-  left:0;
+  left: 0;
   right: 0;
   -webkit-box-shadow: -1px 27px 34px -16px rgba(182,186,192,1);
   -moz-box-shadow: -1px 27px 34px -16px rgba(182,186,192,1);
   box-shadow: -1px 27px 34px -16px rgba(182,186,192,1);
+  perspective: 800px;
+
+}
+
+//блоки
+.paper{
+    text-align: center;
+    background: #ffffff;
+    padding: 10px 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    -webkit-box-shadow: 28px 3px 57px -5px rgba(176,180,187,1);
+    -moz-box-shadow: 28px 3px 57px -5px rgba(176,180,187,1);
+    box-shadow: 28px 3px 57px -5px rgba(176,180,187,1);
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6e7e9+0,e6e7e9+42,e4e5e7+52,e4e5e7+100 */
+    background: #e6e7e9; /* Old browsers */
+    background: -moz-linear-gradient(left, hsl(220,6%,91%) 0%, hsl(220,6%,91%) 42%, hsl(220,6%,90%) 52%, hsl(220,6%,90%) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, hsl(220,6%,91%) 0%,hsl(220,6%,91%) 42%,hsl(220,6%,90%) 52%,hsl(220,6%,90%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, hsl(220,6%,91%) 0%,hsl(220,6%,91%) 42%,hsl(220,6%,90%) 52%,hsl(220,6%,90%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e7e9', endColorstr='#e4e5e7',GradientType=1 ); /* IE6-9 */
+    &.contact{
+
+    }
+
+    &.eco{
+        right:15%;
+    }
+
+
+    &.delivery{
+        right: 30%;
+    }
+
+
+    &.quality{
+        right: 45%;
+    }
+
+
+    &.products{
+        right: 60%;
+    }
+
+
+    &.company{
+        right: 75%;
+    }
+
+
+    &.fixed{
+        color: $largeText;
+        right: 90%;
+        width: 10%;
+        background: white;
+
+    }
+}
+
+p.menuItem{
+    margin-top: 4px;
+  font-size: 14px ;
+  color:  #605F5F;
+}
+ //Блок 1 начало
+.footer{
+    position: inherit;
+    bottom: 3%;
+    right: 0;
+    left: 0;
+    font-size: 11px;
+    text-align: center;
+
+    & a{
+        color: $largeText;
+    }
+}
+
+//переключение языков
+.language{
+    color: $largeText;
+    font-size: 14px ;
+    text-align: center;
+
+    & a {
+        color: $largeText;
+        text-decoration: none;
+    }
+
+    & a:hover{
+        text-decoration: underline;
+    }
+}
+
+
+.apple{
+    display: inline;
+    margin-top: 25px;
+
+}
+
+.ellipse {
+    background: #ffffff;
+    border: none;
+    width: 94px;
+    height: 94px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 25%;
+    line-height: 120px;
+    margin-bottom: 40px;
+
+}
+
+//Блок 1 конец
+
+
+//animated
+.paper:hover {
+
+    .ellipse {
+        transition: 2s infinite ease-out;
+        border: 4px solid #e4e5e7;
+        -webkit-box-shadow: 0px 0px 0px 4px #ffffff;
+        -moz-box-shadow: 0px 0px 0px 4px #ffffff;
+        box-shadow: 0px 0px 0px 4px #ffffff;
+    }
+    img.icon {
+        transition: 2s infinite ease-out;
+        -webkit-filter: grayscale(1) brightness(0.6) contrast(5) opacity(0.5);
+        //animation-fill-mode: forwards;
+    }
+
+}
+
+//test card
+.paperActive{
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 100;
+    background: url("https://pp.vk.me/c631318/v631318184/24d92/9mJMHPGmawI.jpg") no-repeat;
+    background-size:  100% ;
+    .orange{
+        height: 10px;
+        background: $orange;
+    }
+    .ellipse{
+        background: none;
+        border: 2px solid #8b8b8b;
+    }
+     .menuItem{
+         color: #ffffff;
+     }
+
+    &.contact{
+
+    }
+
+    &.eco{
+        right:15%;
+    }
+
+
+    &.delivery{
+        right: 30%;
+    }
+
+
+    &.quality{
+        right: 45%;
+    }
+
+
+    &.products{
+        right: 60%;
+    }
+
+
+    &.company{
+        right: 75%;
+    }
+
+
+}
+
+
+//анимация на активной странице
+
+
+
+#round{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #333333;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 50%;
+
 
 
 
 }
-.paper{
-  background: #ffffff;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  right:0;
-  width: 15%;
-  -webkit-box-shadow: 28px 3px 57px -5px rgba(176,180,187,1);
-  -moz-box-shadow: 28px 3px 57px -5px rgba(176,180,187,1);
-  box-shadow: 28px 3px 57px -5px rgba(176,180,187,1);
 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6e7e9+0,e6e7e9+42,e4e5e7+52,e4e5e7+100 */
-  background: #e6e7e9; /* Old browsers */
-  background: -moz-linear-gradient(left, hsl(220,6%,91%) 0%, hsl(220,6%,91%) 42%, hsl(220,6%,90%) 52%, hsl(220,6%,90%) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, hsl(220,6%,91%) 0%,hsl(220,6%,91%) 42%,hsl(220,6%,90%) 52%,hsl(220,6%,90%) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, hsl(220,6%,91%) 0%,hsl(220,6%,91%) 42%,hsl(220,6%,90%) 52%,hsl(220,6%,90%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e7e9', endColorstr='#e4e5e7',GradientType=1 ); /* IE6-9 */
-  &.eco{
-    right:15%;
-  }
-  &.delivery{
-    right:30%;
-  }
-  &.quality{
-    right: 45%;
-  }
-  &.products{
-    right: 60%;
-  }
-  &.company{
-    right: 75%;
-  }
-  &.menu{
-    right: 90%;
-    width: 10%;
-    background: white;
-  }
+.round-orbita{
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    left: 47px;
+    top: 0px;
+    -moz-animation-name: mov;
+    -moz-animation-duration: 4.3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-name: mov;
+    -webkit-animation-duration: 4.3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -ms-animation-name: mov;
+    -ms-animation-duration: 4.3s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: mov;
+    -o-animation-duration: 4.3s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: mov;
+    animation-duration: 4.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.round-boll{
+    position: absolute;
+    left: 0px;
+    top: -15px;
+    width: 21px;
+    height: 21px;
+    background: #FAAF00;
+    -moz-border-radius: 21px;
+    -webkit-border-radius: 21px;
+    -ms-border-radius: 21px;
+    -o-border-radius: 21px;
+    border-radius: 21px;
+}
+
+@-moz-keyframes mov{
+    0%{
+        -moz-transform: rotate(0deg)}
+
+    100%{
+        -moz-transform: rotate(360deg)}
+
+}
+
+@-webkit-keyframes mov{
+    0%{
+        -webkit-transform: rotate(0deg)}
+
+    100%{
+        -webkit-transform: rotate(360deg)}
+
+}
+
+@-ms-keyframes mov{
+    0%{
+        -ms-transform: rotate(0deg)}
+
+    100%{
+        -ms-transform: rotate(360deg)}
+
+}
+
+@-o-keyframes mov{
+    0%{
+        -o-transform: rotate(0deg)}
+
+    100%{
+        -o-transform: rotate(360deg)}
+
+}
+
+@keyframes mov{
+    0%{
+        transform: rotate(0deg)}
+
+    100%{
+        transform: rotate(360deg)}
 
 }

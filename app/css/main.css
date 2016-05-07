@@ -37,7 +37,7 @@ body {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #e7e8e9 0%, #e7e8e9 42%, #e4e5e7 52%, #e4e5e7 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e7e9', endColorstr='#e4e5e7',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e7e9', endColorstr='#e4e5e7', GradientType=1);
   /* IE6-9 */ }
   .paper.eco {
     right: 15%; }
@@ -51,13 +51,15 @@ body {
     right: 75%; }
   .paper.fixed {
     color: #8b8b8b;
-    right: 90%;
+    left: 0;
     width: 10%;
     background: white; }
 
 p.menuItem {
-  margin-top: 4px;
+  position: relative;
+  top: 20px;
   font-size: 14px;
+  font-weight: bold;
   color: #605F5F; }
 
 .footer {
@@ -72,17 +74,19 @@ p.menuItem {
 
 .language {
   color: #8b8b8b;
-  font-size: 14px;
+  font-size: 11px;
   text-align: center; }
-  .language a {
-    color: #8b8b8b;
-    text-decoration: none; }
-  .language a:hover {
-    text-decoration: underline; }
+
+.language a {
+  color: #8b8b8b;
+  text-decoration: none; }
+
+.language a:hover {
+  text-decoration: underline; }
 
 .apple {
   display: inline;
-  margin-top: 25px; }
+  margin-top: 52px; }
 
 .ellipse {
   background: #ffffff;
@@ -91,7 +95,7 @@ p.menuItem {
   height: 94px;
   display: inline-block;
   border-radius: 50%;
-  margin-top: 25%;
+  margin-top: 35%;
   line-height: 120px;
   margin-bottom: 40px; }
 
@@ -107,6 +111,7 @@ p.menuItem {
   -webkit-filter: grayscale(1) brightness(0.6) contrast(5) opacity(0.5); }
 
 .paperActive {
+  display: none;
   opacity: 1;
   text-align: center;
   position: absolute;
@@ -116,16 +121,18 @@ p.menuItem {
   width: 15%;
   height: 100%;
   z-index: 100;
-  background: url("https://pp.vk.me/c631318/v631318184/24d92/9mJMHPGmawI.jpg") no-repeat;
+  background: url("https://pp.vk.me/c631318/v631318184/24d92/9mJMHPGmawI.jpg") no-repeat transparent;
   background-size: 100%; }
-  .paperActive .orange {
+  .paperActive.orange {
     height: 10px;
     background: #fab000; }
   .paperActive .ellipse {
     background: none;
-    border: 2px solid #8b8b8b; }
-  .paperActive .menuItem {
-    color: #ffffff; }
+    border: 2px solid #fab000;
+    margin-top: 60px; }
+  .paperActive p.menuItem {
+    color: #ffffff;
+    top: 30px; }
   .paperActive.eco {
     right: 15%; }
   .paperActive.delivery {
@@ -152,8 +159,8 @@ p.menuItem {
   position: absolute;
   width: 5px;
   height: 100px;
-  left: 47px;
-  top: 0px;
+  left: 50%;
+  top: 60px;
   -moz-animation-name: mov;
   -moz-animation-duration: 4.3s;
   -moz-animation-iteration-count: infinite;
@@ -178,10 +185,10 @@ p.menuItem {
 .round-boll {
   position: absolute;
   left: 0px;
-  top: -15px;
-  width: 21px;
-  height: 21px;
-  background: #FAAF00;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  background: #fab000;
   -moz-border-radius: 21px;
   -webkit-border-radius: 21px;
   -ms-border-radius: 21px;

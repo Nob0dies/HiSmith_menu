@@ -1,3 +1,9 @@
-/**
- * Created by Nobodies on 04.05.2016.
- */
+
+    (function () {
+        $('section').on('click', function () {
+            $('.paperActive:visible').hide();
+            $(this).find('.paperActive').show();
+
+        })
+
+    });

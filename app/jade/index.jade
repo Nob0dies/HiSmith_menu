@@ -13,84 +13,97 @@ html(lang='ru')
         title test-task
     body
         .wrapper
-            .paper.contact
-                   .ellipse
-                        img.icon(src="img/contactImg.jpg")
+            section
+                .paper.contact
+                    .ellipse
+                        img.icon(src="img/phone.png")
                     p.menuItem Контакты
-            .paperActive.contact
-                .orange
-                .round
-                    .round-orbita
-                        .round-boll
-                   // img.icon(src="img/contactImg.jpg")
-                p.menuItem Контакты
+                .paperActive.contact
+                    .orange
+                        .ellipse
+                            img.icon(src="img/phone.png")
+                        .round
+                            .round-orbita
+                                .round-boll
+                        p.menuItem Контакты
 
-            .paper.eco
-                .ellipse
-                    img.icon(src="img/ecoImg.jpg")
-                p.menuItem Экологическая
-                p.menuItem безопасность
-            .paperActive.eco
-                .orange
-                .ellipse
-                    img.icon(src="img/ecoImg.jpg")
-                p.menuItem Экологическая
-                p.menuItem безопасность
+            section
+                .paper.eco
+                    .ellipse
+                        img.icon(src="img/our.png")
+                    p.menuItem Экологическая безопасность
+                .paperActive.eco
+                    .orange
+                        .ellipse
+                            img.icon(src="img/our.png")
+                        .round
+                            .round-orbita
+                                .round-boll
+                        p.menuItem Экологическая безопасность
 
+            section
+                .paper.delivery
+                    .ellipse
+                        img.icon(src="img/cisterna.png")
+                    p.menuItem Услуги доставки
+                .paperActive.delivery
+                    .orange
+                        .ellipse
+                            img.icon(src="img/cisterna.png")
+                        .round
+                            .round-orbita
+                                .round-boll
+                        p.menuItem Услуги доставки
+            section
+                .paper.quality
+                    .ellipse
+                        img.icon(src="img/colba.png")
+                    p.menuItem Контроль качества
+                .paperActive.quality
+                    .orange
+                        .ellipse
+                            img.icon(src="img/colba.png")
+                        .round
+                            .round-orbita
+                                .round-boll
+                        p.menuItem Контроль качества
 
-            .paper.delivery
-                .ellipse
-                    img.icon(src="img/deliveryImg.jpg")
-                p.menuItem Услуги
-                p.menuItem доставки
-            .paperActive.delivery
-                .orange
-                .ellipse
-                    img.icon(src="img/deliveryImg.jpg")
-                p.menuItem Услуги
-                p.menuItem доставки
+            section
+                .paper.products
+                    .ellipse
+                        img.icon(src="img/botle.png")
+                    p.menuItem Продукция
+                .paperActive.products
+                    .orange
+                    .ellipse
+                        img.icon(src="img/botle.png")
+                    .round
+                        .round-orbita
+                            .round-boll
+                    p.menuItem Продукция
 
-            .paper.quality
-                .ellipse
-                    img.icon(src="img/qualityImg.jpg")
-                p.menuItem Контроль
-                p.menuItem качества
-            .paperActive.quality
-                .orange
-                .ellipse
-                    img.icon(src="img/qualityImg.jpg")
-                p.menuItem Контроль
-                p.menuItem качества
-
-
-            .paper.products
-                .ellipse
-                    img.icon(src="img/productImg.jpg")
-                p.menuItem Продукция
-            .paperActive.products
-                .orange
-                .ellipse
-                    img.icon(src="img/productImg.jpg")
-                p.menuItem Продукция
-
-
-            .paper.company
-                .ellipse
-                    img.icon(src="img/companyImg.jpg")
-                p.menuItem О компании
-            .paperActive.company
-                .orange
-                .ellipse
-                    img.icon(src="img/companyImg.jpg")
-                p.menuItem О компании
-
-
-            .paper.fixed
-                .footer
-                    p Сделано в
-                       a(href="#" title="ссылка на HISmith")  HISmith
-                p.language
-                    a(href="#" title="русский язык") рус
-                    i &nbsp;|&nbsp;
-                    a(href="#" title="language english") eng
-                img.apple(src="img/Color Fill 1.jpg" alt="Apple" )
+            section
+                .paper.company
+                    .ellipse
+                        img.icon(src="img/ww.png")
+                    p.menuItem О компании
+                .paperActive.company
+                    .orange
+                        .ellipse
+                            img.icon(src="img/ww.png")
+                        .round
+                            .round-orbita
+                                .round-boll
+                        p.menuItem О компании
+            section
+                .paper.fixed
+                    .footer
+                        p Сделано в
+                           a(href="#" title="ссылка на HISmith")  HISmith
+                    p.language
+                        a(href="#" title="русский язык") рус
+                        i &nbsp;|&nbsp;
+                        a(href="#" title="language english") eng
+                    img.apple(src="img/Apple.png" alt = "Apple" )
+script(src="bower/jquery/jquery.min.js")
+script(src="js/main.js")
